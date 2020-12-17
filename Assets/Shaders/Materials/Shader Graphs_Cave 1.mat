@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_Cave 1
+  m_Shader: {fileID: -6465566751694194690, guid: b98d964441573bd4e96f73171d656fb7,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_23D2A771:
+        m_Texture: {fileID: 2800000, guid: dc3282f18f1825d48aa9568f9ee64b3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_2920C671:
+        m_Texture: {fileID: 2800000, guid: cdc29987a007e9947914ad948142b509, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_92B1566C:
+        m_Texture: {fileID: 2800000, guid: b9521960fefa7c64a8ba2dc5f2966b19, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalFromTexture_299A20DE_Texture_0:
+        m_Texture: {fileID: 2800000, guid: cdc29987a007e9947914ad948142b509, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_88A4BFFF_Texture_1:
+        m_Texture: {fileID: 2800000, guid: dc3282f18f1825d48aa9568f9ee64b3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_A326BD22_Texture_1:
+        m_Texture: {fileID: 2800000, guid: b9521960fefa7c64a8ba2dc5f2966b19, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_D6611264_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 1b1abe439c8d3794e99b51c7ca4e3ebd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_E55C7E4F_Texture_1:
+        m_Texture: {fileID: 2800000, guid: b9521960fefa7c64a8ba2dc5f2966b19, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_F7364534_Texture_1:
+        m_Texture: {fileID: 2800000, guid: cdc29987a007e9947914ad948142b509, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_F7A1F575: 0.7
+    m_Colors: []
