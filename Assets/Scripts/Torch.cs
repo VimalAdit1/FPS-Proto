@@ -12,16 +12,23 @@ public class Torch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        isOn = false;
+        pointLight.SetActive(false);
+        fire.SetActive(false);
+        particles.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetKeyDown(KeyCode.E))
+       if(Input.GetKeyDown(KeyCode.Q))
         {
             isOn = (isOn == true) ? false : true;
             StartCoroutine (UpdateState());
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            playerAnimator.SetTrigger("interact");
         }
     }
  
