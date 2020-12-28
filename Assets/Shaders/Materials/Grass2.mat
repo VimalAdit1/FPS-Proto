@@ -23,10 +23,10 @@ Material:
   m_Name: Grass2
   m_Shader: {fileID: -6465566751694194690, guid: 4baa57f30af0f3544aee767dff408aa6,
     type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT
+  m_ShaderKeywords: _ALPHATEST_ON _BLENDMODE_ALPHA _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT
     _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
   m_CustomRenderQueue: 3000
   stringTagMap:
@@ -40,25 +40,25 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_5788B2EF:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b36e03b89118e2b4e92dfd1d8eeb62cb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C7F4EE01:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 8fa1f31ee512f0a498ce83057b1a429d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_E6F642D5:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 3e5bd0b452a18bd47b7cb004e26ff6a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_2C17DBCE: 0.03
+    - Vector1_2C17DBCE: 0.3
     - Vector1_2EA5A669: 0.06
-    - Vector1_E2E18F39: 0
+    - Vector1_E2E18F39: 1
     - _AlphaCutoffEnable: 1
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
-    - _BlendMode: 4
+    - _BlendMode: 0
     - _CullMode: 0
     - _CullModeForward: 0
     - _DoubleSidedEnable: 1
@@ -92,8 +92,8 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - Color_419F5DCE: {r: 0.41509432, g: 0.41430596, b: 0.15076537, a: 1}
-    - Color_EB181ECA: {r: 0.34958816, g: 0.6132076, b: 0.112807065, a: 1}
-    - Vector2_F52DEE00: {r: -5, g: 0, b: 0, a: 0}
+    - Color_419F5DCE: {r: 1, g: 1, b: 1, a: 1}
+    - Color_EB181ECA: {r: 1, g: 1, b: 1, a: 1}
+    - Vector2_F52DEE00: {r: 5.23, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

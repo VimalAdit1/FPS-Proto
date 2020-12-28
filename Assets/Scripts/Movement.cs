@@ -14,10 +14,11 @@ public class Movement : MonoBehaviour
     float strafe;
     public Rigidbody rb;
     public Animator animator;
+    public bool isGrounded;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isGrounded = false;
     }
 
     // Update is called once per frame
@@ -35,7 +36,7 @@ public class Movement : MonoBehaviour
             isSprinting = false;
             sprintMultiplier = 1f;
         }
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump")&&isGrounded)
         {
             isJumping = true;
         }
