@@ -52,11 +52,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_B2449E94:
-        m_Texture: {fileID: 2800000, guid: bedb44aadac834941a783edbadf19abe, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3007509739796a5448d570d07f3292dc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C0EA505F:
-        m_Texture: {fileID: 2800000, guid: 469236bef1e5d604cab78069341104da, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7e1d9a7d64c2c5b4792593b0553e2d75, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C43D030D:
@@ -72,7 +72,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_E503E951:
-        m_Texture: {fileID: 2800000, guid: 562d4ec8ca8bde847b4752f44eccaf59, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6dd9c6688b4764c4d9f34e10bde6cba9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortionVectorMap:
@@ -116,12 +116,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_1834348F: 0.97
+    - Vector1_1834348F: 1.49
     - Vector1_30B5507: -1.03
     - Vector1_6CA8C1FB: -5.68
     - Vector1_AF6963DD: 5.51
-    - Vector1_BB68EA1A: 1.31
-    - Vector1_EFE56BC: 1.57
+    - Vector1_BB68EA1A: 1.88
+    - Vector1_EFE56BC: 2.59
     - Vector1_F7A1F575: 20
     - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
@@ -184,7 +184,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - Color_BA35E37A: {r: 0.40792218, g: 0.5754717, b: 0.08957815, a: 1}
+    - Color_BA35E37A: {r: 0.084590435, g: 1, b: 0, a: 1}
     - Color_D1A957F6: {r: 0.8584906, g: 0.7487046, b: 0.6114721, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}

@@ -54,4 +54,14 @@ public class Movement : MonoBehaviour
             isJumping = false;
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+            isGrounded = true;
+     
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+            isGrounded = false;
+       
+    }
 }
