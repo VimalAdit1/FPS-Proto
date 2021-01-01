@@ -20,13 +20,10 @@ public class Pickup : MonoBehaviour
         {
             Item item =hit.transform.GetComponent<Item>();
             if (item != null)
-                Debug.Log("pickupp!!"+item.isPicked);
             if (item != null && item.isPicked==false && Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("picking up!!");
-                item.transform.parent = this.transform;
-                animator.SetTrigger("isPicking");
-                item.Pickup();
+                animator.SetTrigger("interact");
+                item.Interact();
                 
             }
         }

@@ -2,13 +2,16 @@
 using UnityEngine;
 using UnityEngine.XR;
 
-public class Item : MonoBehaviour
+public  class Item : MonoBehaviour
 {
     // Start is called before the first frame update
     public bool isPicked = false;
     public Transform offset;
     Transform originalOffset;
     Rigidbody rb;
+
+    public virtual void Interact()
+    { }
     void Start()
     {
         rb = GetComponent<Rigidbody>();

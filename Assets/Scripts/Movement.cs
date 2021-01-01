@@ -49,7 +49,7 @@ public class Movement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(move*sprintMultiplier));
         if(isJumping)
         {
-            Debug.Log("jump!!");
+           
             rb.AddForce(Vector3.up * jumpForce*Time.deltaTime, ForceMode.Impulse);
             isJumping = false;
         }
