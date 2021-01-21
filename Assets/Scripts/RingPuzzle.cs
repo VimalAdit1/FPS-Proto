@@ -9,6 +9,14 @@ public class RingPuzzle : MonoBehaviour
     private bool ring1;
     private bool ring2;
     private bool ring3;
+
+    public Material[] materials;
+    public GameObject bricks;
+
+    private void Start()
+    {
+        SetBrickMaterial(0);
+    }
     public void SetRingStatus(int ring,bool status)
     {
         switch(ring)
@@ -24,7 +32,18 @@ public class RingPuzzle : MonoBehaviour
     {
         if(ring1&&ring2&&ring3)
         {
-            gameObject.SetActive(false);
+            Animator doorAnimator = gameObject.GetComponent<Animator>();
+            doorAnimator.SetTrigger("Open");
+            SetBrickMaterial(1);
+        }
+    }
+
+    private void SetBrickMaterial(int i)
+    {
+        MeshRenderer[] meshes = bricks.GetComponentsInChildren<MeshRenderer>();
+        foreach(MeshRenderer m in meshes)
+        {
+            m.material = materials[i];
         }
     }
 }

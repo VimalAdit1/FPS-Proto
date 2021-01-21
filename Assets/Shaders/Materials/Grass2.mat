@@ -51,23 +51,49 @@ Material:
         m_Texture: {fileID: 2800000, guid: 3e5bd0b452a18bd47b7cb004e26ff6a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 1c802bebb9c319a47a9bd2c8077e7989, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2c80d77ade00cec4c93e8a89847c4901, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowOffset:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TranslucencyMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_2C17DBCE: 0.5
     - Vector1_2EA5A669: 0.08
     - Vector1_E2E18F39: 1.07
+    - _AO: 2.4
     - _AlphaCutoffEnable: 1
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
+    - _BaseLight: 0.35
     - _BlendMode: 0
     - _CullMode: 0
     - _CullModeForward: 0
+    - _Cutoff: 0.338
     - _DoubleSidedEnable: 1
     - _DoubleSidedNormalMode: 0
     - _DstBlend: 10
     - _EnableFogOnTransparent: 1
+    - _Occlusion: 7.5
     - _ReceivesSSR: 1
     - _RenderQueueType: 5
     - _RequireSplitLighting: 0
+    - _Shininess: 0.078125
+    - _SquashAmount: 1
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -95,5 +121,8 @@ Material:
     - Color_419F5DCE: {r: 1, g: 1, b: 1, a: 1}
     - Color_EB181ECA: {r: 1, g: 1, b: 1, a: 1}
     - Vector2_F52DEE00: {r: 5.23, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
