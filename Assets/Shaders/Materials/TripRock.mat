@@ -185,7 +185,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_BA35E37A: {r: 0.96723044, g: 1, b: 0.0047169924, a: 1}
-    - Color_D1A957F6: {r: 0.8018868, g: 0.7264765, b: 0.631675, a: 0}
+    - Color_D1A957F6: {r: 0.5566038, g: 0.50954694, b: 0.34919012, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
