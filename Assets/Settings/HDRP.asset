@@ -157,7 +157,7 @@ MonoBehaviour:
     type: 2}
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
-      data1: 69885560356685
+      data1: 21506509766477
       data2: 4539628425463136256
     lodBias: 1
     lodBiasMode: 0
@@ -343,11 +343,11 @@ MonoBehaviour:
   enableSRPBatcher: 1
   shaderVariantLogLevel: 0
   availableMaterialQualityLevels: -1
-  m_DefaultMaterialQualityLevel: 4
+  m_DefaultMaterialQualityLevel: 1
   diffusionProfileSettings: {fileID: 0}
   diffusionProfileSettingsList:
-  - {fileID: 11400000, guid: 7a9a5cba5bcac7949a699e19ae1f64e7, type: 2}
-  - {fileID: 11400000, guid: d1de82a286451e74cb0bccfa25ad4655, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   beforeTransparentCustomPostProcesses: []
   beforePostProcessCustomPostProcesses: []
   afterPostProcessCustomPostProcesses: []

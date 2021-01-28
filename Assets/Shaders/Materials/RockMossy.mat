@@ -25,7 +25,7 @@ Material:
     type: 3}
   m_ShaderKeywords: _DOUBLESIDED_ON _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
   m_CustomRenderQueue: 2000
   stringTagMap:
@@ -322,6 +322,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
+    - Color_78DB2EC2: {r: 0, g: 0, b: 0, a: 0}
     - Color_7C679144: {r: 0, g: 0, b: 0, a: 0}
     - Color_BA35E37A: {r: 0.084590435, g: 1, b: 0, a: 1}
     - Color_D1A957F6: {r: 0.8584906, g: 0.7487046, b: 0.6114721, a: 0}

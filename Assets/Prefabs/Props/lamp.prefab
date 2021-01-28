@@ -110,6 +110,7 @@ MonoBehaviour:
   isPicked: 0
   offset: {fileID: 0}
   pointLight: {fileID: 4497017072433561924}
+  burnOnInstance: 0
   particles: {fileID: 4497017072433561924}
 --- !u!1 &3750526375298066617
 GameObject:
@@ -554,13 +555,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 73222.52
-  m_Range: 11.41
+  m_Intensity: 5792.6187
+  m_Range: 8.3
   m_SpotAngle: 37.6
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -597,7 +598,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 2967
+  m_ColorTemperature: 3668
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 4.6781e-41, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -623,12 +624,12 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 19.16
+  m_Intensity: 15.5
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 3.2
   m_InnerSpotPercent: 88.2
   m_LightDimmer: 1
-  m_VolumetricDimmer: 0.32
+  m_VolumetricDimmer: 1.58
   m_LightUnit: 4
   m_FadeDistance: 10000
   m_AffectDiffuse: 1
