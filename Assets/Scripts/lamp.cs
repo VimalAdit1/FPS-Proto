@@ -11,13 +11,10 @@ public class lamp : Item
     // Start is called before the first frame update
     void Start()
     {
-        isOn = false;
-        pointLight.SetActive(false);
-        particles.SetActive(false);
-        if(burnOnInstance)
-        {
-            Interact();
-        }
+        isOn = burnOnInstance;
+        pointLight.SetActive(isOn);
+        particles.SetActive(isOn);
+        
     }
 
     // Update is called once per frame
@@ -32,17 +29,9 @@ public class lamp : Item
     }
     IEnumerator UpdateState()
     {
+            pointLight.SetActive(isOn);
+            particles.SetActive(isOn);
         
-        if (isOn)
-        {
-            pointLight.SetActive(true);
-            particles.SetActive(true);
-        }
-        else
-        {
-            pointLight.SetActive(false);
-            particles.SetActive(false);
-        }
         yield return new WaitForSeconds(.1f);
     }
 }

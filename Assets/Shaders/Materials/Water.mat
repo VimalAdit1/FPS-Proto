@@ -26,10 +26,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - Vector1_24B3FC59: 0.7
-    - Vector1_7C144C9A: 11.58
+    - Vector1_24B3FC59: 4
+    - Vector1_7C144C9A: -0.79
     - Vector1_92ACBCD6: 1
-    - Vector1_D7C77E8C: 0.24
+    - Vector1_D7C77E8C: 0.01
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
