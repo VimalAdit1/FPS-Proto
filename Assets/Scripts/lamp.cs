@@ -5,6 +5,7 @@ using UnityEngine;
 public class lamp : Item
 {
     bool isOn = false;
+    bool forced = false;
     public GameObject pointLight;
     public bool burnOnInstance=false;
     public GameObject particles;
@@ -26,6 +27,23 @@ public class lamp : Item
     {
         isOn = (isOn == true) ? false : true;
         StartCoroutine(UpdateState());
+    }
+    public void TurnOn()
+    {
+        Debug.Log("turn on!!!");
+        if (!isOn&&!forced)
+        {
+            isOn = true;
+            StartCoroutine(UpdateState());
+        }
+    }public void TurnOff()
+    {
+        if (isOn&&!forced)
+        {
+            isOn = false;
+            forced = true;
+            StartCoroutine(UpdateState());
+        }
     }
     IEnumerator UpdateState()
     {
