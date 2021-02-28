@@ -8,6 +8,7 @@ public class SceneLoader : MonoBehaviour
 
     private bool isLoaded;
     private bool shouldLoad;
+    public bool canLoad;
     IEnumerator loadScene;
     public float loadingProgress;
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class SceneLoader : MonoBehaviour
 
     private void TriggerCheck()
     {
-        if (shouldLoad)
+        if (shouldLoad&&canLoad)
         {
             //LoadScene();
             LoadGO();

@@ -12,7 +12,7 @@ public class RingPuzzle : MonoBehaviour
 
     public Material[] materials;
     public GameObject bricks;
-
+    public SceneLoader waterScene;
     private void Start()
     {
         SetBrickMaterial(0);
@@ -34,6 +34,7 @@ public class RingPuzzle : MonoBehaviour
         {
             Animator doorAnimator = gameObject.GetComponent<Animator>();
             doorAnimator.SetTrigger("Open");
+            waterScene.canLoad = true;
             SetBrickMaterial(1);
         }
     }

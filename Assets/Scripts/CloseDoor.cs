@@ -7,6 +7,7 @@ public class CloseDoor : MonoBehaviour
 {
     private bool isClosed;
     public GameObject door;
+    public GameObject cave;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +32,6 @@ public class CloseDoor : MonoBehaviour
         Animator doorAnimator = door.GetComponent<Animator>();
         doorAnimator.SetTrigger("Close");
         isClosed = true;
+        cave.SetActive(false);
     }
 }
