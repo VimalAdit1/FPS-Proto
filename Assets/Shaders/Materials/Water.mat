@@ -14,7 +14,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 3400
   stringTagMap:
     MotionVector: User
     RenderType: Transparent
@@ -27,21 +27,21 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - Vector1_24B3FC59: 7.09
-    - Vector1_7C144C9A: -0.79
+    - Vector1_7C144C9A: 0
     - Vector1_92ACBCD6: 0
     - Vector1_D7C77E8C: 0.004
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
-    - _AlphaSrcBlend: 1
+    - _AlphaSrcBlend: 0
     - _BlendMode: 0
     - _CullMode: 2
     - _CullModeForward: 2
     - _DoubleSidedEnable: 0
-    - _DoubleSidedNormalMode: 2
+    - _DoubleSidedNormalMode: 0
     - _DstBlend: 10
     - _EnableFogOnTransparent: 1
     - _ReceivesSSR: 1
-    - _RenderQueueType: 5
+    - _RenderQueueType: 6
     - _RequireSplitLighting: 0
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -68,8 +68,8 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - Color_9AAF4223: {r: 0.9481132, g: 0.95493495, b: 1, a: 0.043137256}
-    - Color_E1DB6443: {r: 0.9575472, g: 1, b: 0.9988526, a: 0.19215687}
-    - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
+    - Color_E1DB6443: {r: 0.82961017, g: 0.9716981, b: 0.9716981, a: 0.19215687}
+    - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &4662329469314409317
 MonoBehaviour:
