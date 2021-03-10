@@ -10,11 +10,11 @@ Material:
   m_Name: Water
   m_Shader: {fileID: -6465566751694194690, guid: 2e55296eb6e70ca48af3769a45a57131,
     type: 3}
-  m_ShaderKeywords: _BLENDMODE_ALPHA _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
+  m_ShaderKeywords: _BLENDMODE_ALPHA _DOUBLESIDED_ON _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3400
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 3000
   stringTagMap:
     MotionVector: User
     RenderType: Transparent
@@ -26,22 +26,22 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - Vector1_24B3FC59: 7.09
-    - Vector1_7C144C9A: 0
+    - Vector1_24B3FC59: 7.38
+    - Vector1_7C144C9A: 5.82
     - Vector1_92ACBCD6: 0
-    - Vector1_D7C77E8C: 0.004
+    - Vector1_D7C77E8C: 2
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
-    - _AlphaSrcBlend: 0
+    - _AlphaSrcBlend: 1
     - _BlendMode: 0
-    - _CullMode: 2
-    - _CullModeForward: 2
-    - _DoubleSidedEnable: 0
+    - _CullMode: 0
+    - _CullModeForward: 0
+    - _DoubleSidedEnable: 1
     - _DoubleSidedNormalMode: 0
     - _DstBlend: 10
-    - _EnableFogOnTransparent: 1
+    - _EnableFogOnTransparent: 0
     - _ReceivesSSR: 1
-    - _RenderQueueType: 6
+    - _RenderQueueType: 5
     - _RequireSplitLighting: 0
     - _SrcBlend: 1
     - _StencilRef: 0

@@ -25,7 +25,7 @@ public class lamp : Item
     }
     public override void Interact()
     {
-        isOn = (isOn == true) ? false : true;
+        isOn = !isOn;
         StartCoroutine(UpdateState());
     }
     public void TurnOn()
@@ -51,5 +51,9 @@ public class lamp : Item
             particles.SetActive(isOn);
         
         yield return new WaitForSeconds(.1f);
+    }
+    public bool isTurnedOn()
+    {
+        return isOn;
     }
 }

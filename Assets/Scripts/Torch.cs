@@ -26,7 +26,7 @@ public class Torch : MonoBehaviour
     {
        if(Input.GetKeyDown(KeyCode.Q))
         {
-            isOn = (isOn == true) ? false : true;
+            isOn = !isOn;
             StartCoroutine (UpdateState());
         }
         if (Input.GetKeyDown(KeyCode.E))
