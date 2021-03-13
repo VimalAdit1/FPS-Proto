@@ -15,30 +15,36 @@ public class Movement : MonoBehaviour
     public Rigidbody rb;
     public Animator animator;
     public bool isGrounded;
+    public bool isPaused;
+    public MoveCamera camera;
     // Start is called before the first frame update
     void Start()
     {
-        isGrounded = false;
+        isGrounded = true;
+        isPaused = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        strafe = Input.GetAxis("Horizontal");
-        move = Input.GetAxis("Vertical");
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (!isPaused)
         {
-            isSprinting = true;
-            sprintMultiplier = 2f;
-        } 
-        else
-        {
-            isSprinting = false;
-            sprintMultiplier = 1f;
-        }
-        if (Input.GetButton("Jump")&&isGrounded)
-        {
-            isJumping = true;
+            strafe = Input.GetAxis("Horizontal");
+            move = Input.GetAxis("Vertical");
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                isSprinting = true;
+                sprintMultiplier = 2f;
+            }
+            else
+            {
+                isSprinting = false;
+                sprintMultiplier = 1f;
+            }
+            if (Input.GetButton("Jump") && isGrounded)
+            {
+                isJumping = true;
+            }
         }
     }
     private void FixedUpdate()
@@ -64,4 +70,25 @@ public class Movement : MonoBehaviour
             isGrounded = false;
        
     }
+
+    public bool PauseMovement(Transform target)
+    {
+        isPaused = true;
+        strafe = 0;
+        move = 0;
+        camera.isLocked = isPaused;
+        if (target != null)
+        {
+            camera.LookAt(target);
+        }
+        return isPaused;
+    }
+
+    public void UnPauseMovement()
+    {
+        isPaused = false;
+        camera.RemoveTarget();
+        camera.isLocked = isPaused;
+    }
 }
+
