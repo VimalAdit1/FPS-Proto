@@ -83,12 +83,16 @@ public class Movement : MonoBehaviour
         }
         return isPaused;
     }
+    public void Revert()
+    {
+        camera.RemoveTarget();
+    }
 
     public void UnPauseMovement()
     {
         isPaused = false;
-        camera.RemoveTarget();
         camera.isLocked = isPaused;
+        camera.revert = isPaused;
     }
 }
 

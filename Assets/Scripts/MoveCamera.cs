@@ -12,10 +12,13 @@ public class MoveCamera : MonoBehaviour
     float xRotation;
     float yRotation;
     Transform target;
+    Transform start;
+    public bool revert;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         isLocked = false;
+        revert = false;
     }
 
     // Update is called once per frame
@@ -32,25 +35,32 @@ public class MoveCamera : MonoBehaviour
             Quaternion toRotation = Quaternion.FromToRotation(transform.forward, direction);
             transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, 2f*Time.deltaTime);
         }
+        else if (revert)
+        {
+            Vector3 direction = transform.position-start.position;
+            Quaternion toRotation = Quaternion.FromToRotation(transform.forward, direction);
+            transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, 3f * Time.deltaTime);
+        }
         else if(!isLocked)
         {
             
-            player.transform.Rotate(Vector3.up, xRotation);
-            rotation -= yRotation;
-            rotation = Mathf.Clamp(rotation, -90, 90);
-            transform.localRotation = Quaternion.Euler(rotation, 0, 0);
+                player.transform.Rotate(Vector3.up, xRotation);
+                rotation -= yRotation;
+                rotation = Mathf.Clamp(rotation, -90, 90);
+                transform.localRotation = Quaternion.Euler(rotation, 0, 0);
+            
         }
 
     }
 
     public void LookAt(Transform target)
     {
+        start = this.transform;
         this.target = target;
-        
     }
     public void RemoveTarget()
     {
+        revert = true;
         this.target = null;
-
     }
 }

@@ -46,6 +46,8 @@ public class TriggerEvent : MonoBehaviour
     {
         player.PauseMovement(target);
         yield return new WaitForSeconds(cutsceneDuration);
+        player.Revert();
+        yield return new WaitForSeconds(cutsceneDuration);
         player.UnPauseMovement();   
     }
 
