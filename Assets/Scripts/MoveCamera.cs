@@ -9,10 +9,11 @@ public class MoveCamera : MonoBehaviour
     float mouseSensitivity = 200f;
     float rotation = 0;
     public bool isLocked;
+    public GameObject crossHair;
     float xRotation;
     float yRotation;
     Transform target;
-    Transform start;
+    Vector3 start;
     public bool revert;
     void Start()
     {
@@ -37,7 +38,7 @@ public class MoveCamera : MonoBehaviour
         }
         else if (revert)
         {
-            Vector3 direction = transform.position-start.position;
+            Vector3 direction = transform.position-start;
             Quaternion toRotation = Quaternion.FromToRotation(transform.forward, direction);
             transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, 3f * Time.deltaTime);
         }
@@ -55,7 +56,7 @@ public class MoveCamera : MonoBehaviour
 
     public void LookAt(Transform target)
     {
-        start = this.transform;
+        start = this.transform.position;
         this.target = target;
     }
     public void RemoveTarget()

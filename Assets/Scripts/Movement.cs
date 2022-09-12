@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float moveSpeed = 2f;
-    public float strafeSpeed = 2f;
-    public float jumpForce = 600f;
+    public float moveSpeed = 1.8f;
+    public float strafeSpeed = 1.8f;
+    public float jumpForce = 700f;
     float sprintMultiplier = 1f;
     public bool isSprinting = false;
     bool isJumping = false;
@@ -73,6 +73,13 @@ public class Movement : MonoBehaviour
 
     public bool PauseMovement(Transform target)
     {
+        /*Rotate Player
+        Vector3 direction = target.position - transform.position;
+        Quaternion toRotation = Quaternion.FromToRotation(transform.forward, direction);
+        this.transform.localRotation=Quaternion.Euler(new Vector3(transform.localRotation.x,toRotation.eulerAngles.y,transform.localRotation.z);
+        /Rotate Camera*/
+
+        //Rotate Camera back
         isPaused = true;
         strafe = 0;
         move = 0;

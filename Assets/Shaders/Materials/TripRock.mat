@@ -32,10 +32,9 @@ Material:
     MotionVector: User
   disabledShaderPasses:
   - DistortionVectors
-  - MOTIONVECTORS
+  - TransparentDepthPostpass
   - TransparentBackface
   - TransparentDepthPrepass
-  - TransparentDepthPostpass
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -52,11 +51,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_B2449E94:
-        m_Texture: {fileID: 2800000, guid: 3007509739796a5448d570d07f3292dc, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C0EA505F:
-        m_Texture: {fileID: 2800000, guid: 7e1d9a7d64c2c5b4792593b0553e2d75, type: 3}
+        m_Texture: {fileID: 2800000, guid: be5b02c592e28f2468d89806ebdfdb85, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C43D030D:
@@ -72,7 +71,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_E503E951:
-        m_Texture: {fileID: 2800000, guid: 6dd9c6688b4764c4d9f34e10bde6cba9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7901c783e78f76d449b746eb1909ce36, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortionVectorMap:
@@ -116,12 +115,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_1834348F: 1.03
+    - Vector1_1834348F: 0.9
+    - Vector1_226D116C: -0.1
     - Vector1_30B5507: -1.03
-    - Vector1_6CA8C1FB: 1
-    - Vector1_AF6963DD: 2.12
-    - Vector1_BB68EA1A: -0.07
-    - Vector1_EFE56BC: -4.73
+    - Vector1_56856AA4: 2.14
+    - Vector1_6CA8C1FB: 0.5
+    - Vector1_AF6963DD: 1.58
+    - Vector1_BB68EA1A: -0.03
+    - Vector1_D02ED0F3: 69.21
+    - Vector1_EFE56BC: -5.81
     - Vector1_F7A1F575: 20
     - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
@@ -184,8 +186,8 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - Color_BA35E37A: {r: 0.96723044, g: 1, b: 0.0047169924, a: 1}
-    - Color_D1A957F6: {r: 0.5566038, g: 0.50954694, b: 0.34919012, a: 0}
+    - Color_BA35E37A: {r: 0.8301887, g: 0.7945304, b: 0.14489143, a: 1}
+    - Color_D1A957F6: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

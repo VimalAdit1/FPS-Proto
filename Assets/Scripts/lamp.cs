@@ -9,13 +9,15 @@ public class lamp : Item
     public GameObject pointLight;
     public bool burnOnInstance=false;
     public GameObject particles;
+
+    GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
         isOn = burnOnInstance;
         pointLight.SetActive(isOn);
         particles.SetActive(isOn);
-        
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame

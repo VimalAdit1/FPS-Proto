@@ -9,7 +9,7 @@ public class DoorRing : Item
     public int no;
     public int turningRate=100;
     Vector3 targetRotation = new Vector3(0, 0, 45);
-    bool solved = false;
+    public bool solved = false;
     RingPuzzle puzzle;
     private bool rotating=false;
 
