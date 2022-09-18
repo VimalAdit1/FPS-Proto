@@ -7,6 +7,7 @@ public class Pickup : MonoBehaviour
     Camera camera;
     Animator animator;
     GameManager gameManager;
+
     bool tutorial = false;
     void Start()
     {
@@ -37,10 +38,12 @@ public class Pickup : MonoBehaviour
                         if(doorRing.solved)
                         {
                             gameManager.showTutorial("Try Solving other rings to place");
+                            tutorial = true;
                         }
                         else
                         {
                             gameManager.showTutorial("Press E to rotate ring");
+                            tutorial = true;
                         }
 
                     }
