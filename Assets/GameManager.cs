@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject dialogBox;
     public GameObject tutorialBox;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,5 +42,10 @@ public class GameManager : MonoBehaviour
     {
         dialogBox.SetActive(true);
         dialog.text = message;
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene(1);
     }
 }

@@ -25,7 +25,17 @@ public class DoorRing : Item
             StartCoroutine(Rotate(targetRotation, 0.5f));
         }
     }
-
+     public override string HoverMessage()
+    {
+        if (solved)
+        {
+            return "Try Solving other rings to place";
+        }
+        else
+        {
+            return "Press E to rotate ring";
+        }
+    }
     
     private void checkRotation()
     {

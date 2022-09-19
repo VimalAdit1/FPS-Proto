@@ -41,6 +41,7 @@ public class FinalPuzzle : MonoBehaviour
                 GameEnd();
             }
         }
+
     }
 
     void GameEnd()

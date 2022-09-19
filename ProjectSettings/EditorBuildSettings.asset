@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Tunnel.unity
+    path: Assets/Scenes/Old/Tunnel.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
     path: Assets/Scenes/GamePlay.unity
     guid: 6a9ee43c06bbb0c458c2cd7203d35e8a
   - enabled: 0
-    path: Assets/Scenes/Cave.unity
+    path: Assets/Scenes/Old/Cave.unity
     guid: 75dd15118604e91479f39e59d36a299d
   - enabled: 0
-    path: Assets/Scenes/WaterHole.unity
+    path: Assets/Scenes/Old/WaterHole.unity
     guid: 72ba9e45b6683814e9329498bc9462f0
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: b06965b432821b04084ece75beeb9b0b
   m_configObjects: {}

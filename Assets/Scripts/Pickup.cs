@@ -32,28 +32,9 @@ public class Pickup : MonoBehaviour
                     }
                     else
                     {
-                    DoorRing doorRing = hit.transform.GetComponent<DoorRing>();
-                    if (doorRing != null)
-                    {
-                        if(doorRing.solved)
-                        {
-                            gameManager.showTutorial("Try Solving other rings to place");
-                            tutorial = true;
-                        }
-                        else
-                        {
-                            gameManager.showTutorial("Press E to rotate ring");
-                            tutorial = true;
-                        }
-
-                    }
-                    else
-                    {
-                        gameManager.showTutorial("Press E to interact");
+                        gameManager.showTutorial(item.HoverMessage());
                         tutorial = true;
                     }
-                    }
-                
             }
             else
             {

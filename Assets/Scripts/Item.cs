@@ -42,4 +42,9 @@ public  class Item : MonoBehaviour
             this.transform.parent = null;
         }
     }
+
+    public virtual string HoverMessage()
+    {
+        return "Press E to interact";
+    }
 }
