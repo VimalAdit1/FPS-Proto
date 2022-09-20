@@ -46,6 +46,16 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(1);
+    }
+    public void Quit()
+    {
+        Application.Quit();
+    }
+    public void PlaayAgain()
+    {
+        SceneManager.LoadScene(0);
     }
 }
